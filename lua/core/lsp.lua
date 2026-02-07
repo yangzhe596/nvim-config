@@ -142,7 +142,10 @@ vim.lsp.config.lua_ls = {
 }
 
 -- Enable all configured LSP servers
-vim.lsp.enable({"pyright", "clangd", "yamlls", "lua_ls"})
+vim.lsp.enable("pyright")
+vim.lsp.enable("clangd")
+vim.lsp.enable("yamlls")
+vim.lsp.enable("lua_ls")
 
 -- Diagnostics configuration
 vim.diagnostic.config({
